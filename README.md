@@ -20,7 +20,7 @@ public List<String> remove(String todo) {
 1. Removes a given todo, in case it exists in the todo list.
 2. Returns the updated todo list.
 
-This project uses `org.apache.commons.io.FileUtils` to save the todo list to a text file, in the file system. The `Todo` class constructor tries to retrieve existing todos from an existing file. If the a previous file does not exist, a new list is instantiated. See the full constructor in the snippet below.
+This project uses `org.apache.commons.io.FileUtils` for saving the todo list in a text file, in the file system. The `Todo` class constructor tries to retrieve existing todos from an existing file. If the a previous file does not exist, a new list is instantiated. See the full constructor in the snippet below.
 
 
 ```java
@@ -45,10 +45,10 @@ Within the project folder, type and run: `mvn clean package`. This will generate
 
 To try out the app, type and run: `java -jar target/todo-1.0-SNAPSHOT.jar add "To do the dishes"`
 
-Please notice that the last three arguments represent the values and the operation that the calculator uses.
+Please notice that the last two arguments represent the todo operation and title.
 
 ## Testing
-This project features a [test class](./src/test/java/edu/utfpr/cp/sa/CalculatorTest.java) that asserts the implementation correctness. This project uses JUnit 5 for creating unit tests.
+This project features a [test class](./src/test/java/br/edu/utfpr/cp/sa/TodoTest.java) that asserts the implementation correctness. This project uses JUnit 5 for creating unit tests.
 
 One can run all tests by typing and running: `mvn clean test`
 
